@@ -70,10 +70,10 @@ var config = {
     'history': 'history',
     'immutable': 'immutable',
     'isormophic-fetch': 'isomorphic-fetch',
-    'react': 'react',
-    'react-dom': 'react-dom',
+    'react': 'React',
+    'react-dom': 'ReactDOM',
     'react-redux': 'react-redux',
-    'react-router': 'react-router',
+    'react-router': 'ReactRouter',
     'redux': 'redux',
   },
 };

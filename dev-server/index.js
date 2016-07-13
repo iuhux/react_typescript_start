@@ -4,7 +4,7 @@ if (process.env.NODE_ENV !== 'production') {
     // 非production模式下，使用webpack-dev-server处理js请求
     var WebpackDevServer = require("webpack-dev-server");
     var webpack = require("webpack");
-    var webpackConfig = require('../webpack.config');
+    var webpackConfig = require('../webpack.dev.config');
 
     var compiler = webpack(webpackConfig);
 

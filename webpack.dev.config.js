@@ -67,21 +67,12 @@ var config = {
     'history': 'history',
     'immutable': 'immutable',
     'isormophic-fetch': 'isomorphic-fetch',
-    'react': 'react',
-    'react-dom': 'react-dom',
+    'react': 'React',
+    'react-dom': 'ReactDOM',
     'react-redux': 'react-redux',
-    'react-router': 'react-router',
+    'react-router': 'ReactRouter',
     'redux': 'redux',
   },
 };
 
 module.exports = config;
-
-module.exports = {
-    module: {
-        loaders: [
-            // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
-            { test: /\.tsx?$/, loader: "ts-loader" }
-        ],
-    },
-};
