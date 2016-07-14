@@ -22,7 +22,7 @@ if (process.env.NODE_ENV !== 'production') {
 
         // Set this as true if you want to access dev server from arbitrary url.
         // This is handy if you are using a html5 router.
-        historyApiFallback: false,
+        historyApiFallback: true,
 
         // Set this if you want webpack-dev-server to delegate a single path to an arbitrary server.
         // Use "*" to proxy all paths to the specified server.

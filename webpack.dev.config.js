@@ -69,9 +69,9 @@ var config = {
     'isormophic-fetch': 'isomorphic-fetch',
     'react': 'React',
     'react-dom': 'ReactDOM',
-    'react-redux': 'react-redux',
+    //'react-redux': 'react-redux',
     'react-router': 'ReactRouter',
-    'redux': 'redux',
+    //'redux': 'redux',
   },
 };
 
