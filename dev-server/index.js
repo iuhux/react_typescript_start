@@ -28,9 +28,9 @@ if (process.env.NODE_ENV !== 'production') {
         // Use "*" to proxy all paths to the specified server.
         // This is useful if you want to get rid of 'http://localhost:8080/' in script[src],
         // and has many other use cases (see https://github.com/webpack/webpack-dev-server/pull/127 ).
-        /*proxy: {
+        proxy: {
             "*": 'http://localhost:' + (config.port + 1)
-        },*/
+        },
 
         // webpack-dev-middleware options
         quiet: false,
@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 });
 
 console.log("try to starting server at port %d", config.port);
-var appServer = app.listen(config.port, config.host, err => {
+var appServer = app.listen(process.env.NODE_ENV === 'production' ? config.port : config.port + 1, config.host, err => {
   if (err) {
   } else {
         var address = appServer.address();
